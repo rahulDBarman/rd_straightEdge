@@ -7,11 +7,9 @@ This tool is especially useful for creating clean geometry and maintaining consi
 ![Image](https://github.com/user-attachments/assets/3bd421e4-3aca-4b4b-939b-0d1da027490f)
 
 ## Demo Video
-
-[![Youtube Video](https://github.com/rahulDBarman/rd_straightEdge)](https://youtu.be/47CSoJeiLSo?si=5tLArQas9IJkLzEj)
-
-
-[![Maya Straight Edge Script Demo](https://img.youtube.com/vi/47CSoJeiLSo/0.jpg)](https://www.youtube.com/watch?v=47CSoJeiLSo)
+<a href="https://www.youtube.com/watch?v=47CSoJeiLSo">
+  <img width="1280" height="720" alt="download" src="https://github.com/user-attachments/assets/8abd58d6-e7e4-4316-8dd6-cd8d3c17d5d9" />
+</a>
 
 Click the thumbnail above to watch the demo on YouTube.
 
