@@ -5,7 +5,9 @@ import maya.cmds as cmds
 #rd_straight_edge(scale_value=0.4)
  
 ###################################################################################
-def rd_straight_edge(scale_value=1):
+def rd_straight_edge(scale_value=1, **kwargs):
+
+    slide = kwargs.get("slide", False)
     # Get the current selection
     selection = om.MGlobal.getActiveSelectionList()
  
@@ -66,13 +68,22 @@ def rd_straight_edge(scale_value=1):
             vertexName = fullPath + ".vtx[" + str(chainVerts[i]) + "]"
             vertes.append(vertexName)
  
-        cmds.scale(
-            1-scale_value, 1, 1,
-            vertes,
-            xformConstraint = "edge",
-            constrainAlongNormal = True, pivot = midPoint,
-            orientAxes =  rotation,
-            )
+        if slide:
+            cmds.scale(
+                1-scale_value, 1, 1,
+                vertes,
+                xformConstraint = "edge",
+                constrainAlongNormal = True, pivot = midPoint,
+                orientAxes =  rotation,
+                )
+        else:
+            cmds.scale(
+                1, 1-scale_value, 1,
+                vertes,
+                xformConstraint = "none",
+                constrainAlongNormal = True, pivot = midPoint,
+                orientAxes =  rotation,
+                )
      
     #om.MGlobal.setActiveSelectionList(selection)
  
