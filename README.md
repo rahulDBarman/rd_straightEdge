@@ -4,7 +4,12 @@ The **Straight Edge Script** is designed to simplify edge alignment in Maya 3d m
 It allows artists to quickly straighten selected edges, improving precision and speeding up the modeling workflow.  
 This tool is especially useful for creating clean geometry and maintaining consistent topology in complex meshes.
 
+rd_straight_edge(scale_value=0.4, slide = True)
 ![Image](https://github.com/user-attachments/assets/3bd421e4-3aca-4b4b-939b-0d1da027490f)
+
+
+
+rd_straight_edge(scale_value=0.2, slide = False)
 
 ## Demo Video
 <a href="https://www.youtube.com/watch?v=47CSoJeiLSo">
