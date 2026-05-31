@@ -1,3 +1,6 @@
+#https://github.com/rahulDBarman/rd_straightEdge
+# May 31, 2026
+
 import maya.api.OpenMaya as om
 import maya.cmds as cmds
  
